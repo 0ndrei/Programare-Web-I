@@ -1,5 +1,5 @@
 //Ex 1
-var a = prompt('Enter a number: ');
+const a = prompt('Enter a number: ');
 if (a < 0) {
     alert(-1);
 } else if (a == 0) {
@@ -11,30 +11,56 @@ if (a < 0) {
 }
 
 //Ex 2
-/*var userAge = prompt('Crare este virtsa ta? ');
+/* var userAge = prompt('Crare este virtsa ta? ');
 if (userAge >= 14 && userAge <= 90) 
     alert('True');
-    else alert('False');*/
+    else alert('False'); */
 
 var userAge = prompt('Crare este virtsa ta? ');
 if (!(userAge >= 14 && userAge <= 90)) 
     alert('False');
     else alert('True');
 
+
 //Ex 3
+const validLoghin = '2020';
+const validPassword = '20';
 
+const inputLoghin = document.getElementById('form_login');
+const inputPassword = document.getElementById('form_password');
+const submit = document.getElementById('form_submit');
 
-//Ex 4
-let b = prompt('Introdu b: ');
-let c = prompt('Introdu c: ');
+const checkInput = () => {
+    if (inputLoghin.value !== validLoghin && inputPassword.value == validPassword) {
+        alert('Incorrect login');
+    }
 
-for (let i = b; i <= c; i++) {
-    if (i % 2 == 0) {
-        console.log(i);
+    if (inputLoghin.value == validLoghin && inputPassword.value !== validPassword) {
+        alert('Incorrect password');
+    }
+
+    if (inputLoghin.value !== validLoghin && inputPassword.value !== validPassword) {
+        alert('Validation error');
     }
 }
 
+submit.addEventListener('click', () => {
+    checkInput();
+});
 
+//Ex 4
+const b = prompt("Enter minimum number: ");
+const c = prompt("Enter maximum number: ");
+
+let calc = () => {
+    let sum = 0;
+    for (let i = b; i <= c; i++) {
+        if (i % 2 == 0) {
+            sum = sum + i;
+        }
+    }
+    return sum;
+}
 
 console.log("Hello world!");
 
