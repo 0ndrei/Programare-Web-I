@@ -1,5 +1,3 @@
-console.log("Hello world!");
-
 document.body.style.backgroundColor = "blue";
 
 // EX.3.1
@@ -15,8 +13,8 @@ for (i = 0; i < values.length; i++) {
 //  3.1(b)
 
 const number = [1, 2, 3, 4, 5];
-for (const list in number) {
-    console.log(list);
+for (let list in number) {
+    console.log(number[list]);
 }
 
 //  3.1(c)
