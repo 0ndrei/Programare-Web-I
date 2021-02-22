@@ -17,9 +17,9 @@ document.body.style.backgroundColor = "blue";
 
 //3.3(c)
 
-// const music = ['Djaz', 'Blues', 'Rock-n-Roll'];
-// music[1] = 'Classic';
-// console.log(music);
+const music = ['Djaz', 'Blues', 'Rock-n-Roll'];
+music[Math.floor((music.length - 1) / 2)] = 'Classics';
+console.log(music);
 
 //3.3(d)
 
@@ -29,7 +29,7 @@ document.body.style.backgroundColor = "blue";
 
 //3.3(e)
 
-const music = ['Djaz'];
-music.push('Classic', 'Rock-n-Roll');
-music.unshift('Rap', 'Raggy');
-console.log(music);
+// const music = ['Djaz'];
+// music.push('Classic', 'Rock-n-Roll');
+// music.unshift('Rap', 'Raggy');
+// console.log(music);
