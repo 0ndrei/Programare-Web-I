@@ -1,24 +1,24 @@
 document.body.style.backgroundColor = "blue";
 
 let students = [{
-    name: "Maksim",
-    marks: [5, 4, 3, 4, 3]
+    name: "Vitalic",
+    marks: [9, 10, 10, 4, 9]
 },
 {
-    name: "Vlad",
-    marks: [10, 9, 8, 7, 6]
+    name: "Tudor",
+    marks: [8, 9, 8, 7, 8]
 },
 {
     name: "Andrei",
-    marks: [9, 9, 9, 8, 8]
+    marks: [9, 9, 7, 8, 8]
 },
 {
     name: "Victor",
-    marks: [10, 7, 6, 9, 5]
+    marks: [10, 8, 9, 9, 5]
 },
 {
-    name: "Dumitru",
-    marks: [9, 8, 8, 9, 10]
+    name: "Alexandru",
+    marks: [7, 6, 8, 5, 10]
 }
 ];
 
@@ -75,11 +75,9 @@ for (const person of students) {
 };
 
 nameAverage();
-console.log("====================");
+console.log();
 lowerAverage();
-console.log("====================");
-
-console.log("====================");
-
-console.log("====================");
+console.log();
+console.log();
+console.log();
 higherAverage(classAverage());
